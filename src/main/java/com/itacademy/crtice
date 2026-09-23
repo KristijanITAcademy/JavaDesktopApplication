@@ -1,0 +1,22 @@
+Razvoj Java Desktop App
+
+- swing biblioteka
+- JavaFX biblioteka
+    - u biti to su Java klase
+
+ Desktop - aplikacija koja je lokalna, koja se mora instalirati na local racunar da
+ funkcionira
+ GUI - graphical user interface
+
+Glavni container - JFrame
+
+ Runnable runnable = ButtonDemo::createdAndShowGui;
+ SwingUtilities.invokeLater(runnable);
+         // OVO SU DVIJE LINIJE KOJE MORAMO KORISTI DA STARTAMO NEKI BLOK KODA
+         // U DRUGOM THREADU
+
+          // ovdje pisemo kod za GUI
+          JFrame jFrame = new JFrame();
+  //        BorderLayout borderLayout = new BorderLayout();
+  //        jFrame.setLayout(borderLayout);
+          // ucinit ce se ovo u pozadini ako mi to ne ucinimo
